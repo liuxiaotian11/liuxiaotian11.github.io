@@ -1,0 +1,211 @@
+/* css */
+/* default */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 15px "microsoft yahei", arial, helvetica, sans-serif;
+	color: #383737;
+	background: #1f7994;
+	line-height: 1.5;
+}
+
+img {
+	border: 0;
+	display: block;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.clear {
+	clear: both;
+}
+
+.blank {
+	height: 20px;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+/* head */
+header{
+	width: 1000px;
+	margin: auto;
+	position: relative;
+	background: url(../img/header_bck.png) no-repeat top right;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	animation-name: myfirst;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+	/* Firefox: */
+	-moz-animation-name: myfirst;
+	-moz-animation-duration: 5s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-delay: 2s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-play-state: running;
+	/* Safari and Chrome: */
+	-webkit-animation-name: myfirst;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+	/* Opera: */
+	-o-animation-name: myfirst;
+	-o-animation-duration: 5s;
+	-o-animation-timing-function: linear;
+	-o-animation-delay: 2s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-direction: alternate;
+	-o-animation-play-state: running;
+}
+@keyframes myfirst { 0% {
+background:url(../img/header_bck.png) no-repeat top right top;
+}
+ 100% {
+background:url(../img/header_bck.png) no-repeat top right 100px;
+}
+}
+ @-moz-keyframes myfirst /* Firefox */ { 0% {
+background:url(../img/header_bck.png) no-repeat top right top;
+}
+ 100% {
+background:url(../img/header_bck.png) no-repeat top right 100px;
+}
+}
+ @-webkit-keyframes myfirst /* Safari and Chrome */ { 0% {
+background:url(../img/header_bck.png) no-repeat top right top;
+}
+ 100% {
+background:url(../img/header_bck.png) no-repeat top right 100px;
+}
+}
+ @-o-keyframes myfirst /* Opera */ { 0% {
+background:url(../img/header_bck.png) no-repeat top right top;
+}
+ 100% {
+background:url(../img/header_bck.png) no-repeat top right 100px;
+}
+}
+
+.profile { position: relative; overflow: hidden; }
+.avatar { }
+.avatar img {width: 120px;height: 120px;border: rgb(99, 161, 180) 6px solid;border-radius: 5px;}
+.guanzhu { position: absolute; bottom: 0; left: 130px; color:#fff }
+.guanzhu li {display: block;float: left;background: #176c86;margin: 0 0 0 10px;border-radius: 5px;position: relative;}
+.guanzhu li img { opacity: .6 }
+.guanzhu li:hover img { opacity: 1 }
+.guanzhu li span { display: none; }
+.guanzhu li:hover span { display: block; background: #176c86; width: 160px; text-align: center; position: absolute; bottom: 40px; left: 0 }
+.guanzhu li:nth-child(2):hover span { left: -40px }
+.guanzhu li:nth-child(3):hover span { right: -40px; left: auto }
+.guanzhu li:nth-child(4):hover span { right: -160px; left: auto; bottom: 0; }
+.guanzhu li:nth-child(4):hover span img { margin: auto; padding: 10px 0; width: 110px }
+.username {position: absolute;top: 20px;left: 140px;font-size: 26px;color: white;}
+nav {width: 100%;overflow: hidden;background: #63a1b4;line-height: 40px;height: 40px;margin: 20px 0;border-radius: 5px;}
+nav ul { padding: 0 0 0 40px }
+nav li { display: block; float: left; margin-right: 10px }
+nav li a { color: #fff; display: block; padding: 0 20px }
+nav li a#selected, nav li a:hover {color: #fff;background: #176c86;}
+/* article */
+article { width: 1000px; margin: auto; overflow: hidden; }
+.r_box { width: 100%; float: left; overflow: hidden; }
+
+.bloglist li {background: rgba(255,255,255,1);padding: 15px;overflow: hidden;color: #6b6b6b;margin-bottom: 20px;border-radius: 5px;}
+.bloglist li h3 { font-size: 16px; line-height: 25px; color: #fff; }
+.bloglist li h3 a {color: #000;}
+.bloglist li h3 a:hover { color: #1f7994 }
+.bloglist li img { float: right; clear: right; width: 100%; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; }
+.bloglist li i { width: 150px; display: block; max-height: 100px; overflow: hidden; float: right; margin-left: 20px; border-radius: 5px }
+.feed-date {margin-left: 80px;color: #63a1b4;margin-top: 10px;font-size: 13px;}
+.feed-date .fd01 { margin-right: 20px; border-right: #CCC 1px dotted; padding-right: 20px }
+.feed-date a {color: #63a1b4;}
+.feed-date a:hover {color: #1f7994;}
+/* footer */
+footer {text-align: center;color: #ffffff;padding-bottom:20px;}
+footer a{color: #ffffff;}
+
+
+.timebox {background: rgba(255,255,255,1);padding: 30px 30px 10px 30px;border-radius: 5px;margin-bottom: 20px;}
+.timebox span {position: relative;line-height: 32px;padding-right: 40px;color: #1f7994;}
+.timebox span:after { position: absolute; content: ""; width: 2px; height: 40px; background: #e0dfdf; right: 18px }
+.timebox li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.timebox li i { position: relative; font-style: normal }
+.timebox li i:before { content: " "; height: 10px; width: 10px; border: 2px solid #cccaca; background: #fff; position: absolute; top: 4px; left: -26px; border-radius: 50%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
+.timebox li:hover a { color: #1f7994 }
+.timebox li:hover i:before { background: #1f7994 }
+
+
+.pagebg { background: rgba(255,255,255,.3); }
+.pagelist { text-align: center; border-radius: 5px; width: 100%; clear: both; margin: 20px 0; padding-top: 10px; }
+.pagelist a {color: #fffcfc;margin: 0 2px;border: 1px solid #1f7994;padding: 5px 10px;background: #176c86;display: inline-block;margin-bottom: 10px;border-radius: 3px;}
+.pagelist a:hover { color: #fdfdfd; background: #1f7994; }
+.pagelist > b {border: 1px solid #1f7994;padding: 6px 10px;background: #a9d0dc;color: #1f7994;border-radius: 3px;}
+.pagelist .curPage {color: #1f7994;font-weight: bold;background: #a9d0dc;}
+
+.newsview {padding: 0 30px;background: rgba(255,255,255,1);border-radius: 5px;overflow: hidden;margin-bottom: 20px;}
+.news_con { overflow: hidden }
+.news_con a { color: #0e6dad }
+.news_con a:hover { color: #000 }
+.news_con p { margin-bottom: 15px; }
+.news_title {font-size: 24px;font-weight: normal;padding: 20px 0;color: #242525;}
+
+.gbook { background: #FFF; overflow: hidden; margin-bottom: 20px }
+.gbox { padding: 20px; overflow: hidden; }
+.gbox p { margin-bottom: 10px; overflow: hidden; }
+p.fbtime { color: #000; }
+.fbtime span { float: right; color: #999; font-size: 12px; width: 66px; overflow: hidden; white-space: nowrap; }
+p.fbinfo { margin: 10px 0; }
+.fb ul { margin: 10px 10px; padding: 20px 30px; border-bottom: #ececec 1px solid; }
+
+.gbox i { display: block; float: left; margin-right: 10px; }
+.gbox i input { margin: 10px auto; display: block; }
+.hf ul { padding: 10px 20px; background: #f9f9f9; }
+.hf { margin: 0 20px; padding-bottom: 20px; border-bottom: #dedddd 1px dashed; }
+textarea#lytext { width: 99%; }
+.gbox input[type="submit"] { display: block; background: #040404; color: #fff; border: 0; line-height: 30px; padding: 0 20px; border-radius: 5px; float: right; }
+.ecomment { border: #dedcdc 1px solid; padding: 10px; margin-bottom: 10px; }
+span.ecommentauthor { color: #b5b5b5; font-size: 14px; margin-bottom: 5px; display: block; }
+.saying { line-height: 30px; color: #a9a6a6; }
+.saying span { float: right }
+.saying span a { color: #de1513; }
+img#plKeyImg { display: inline-block; }
+.yname { margin: 10px 10px 10px 0 }
+.yname span, .yzm span { padding-right: 10px; }
+.yzm { margin: 0 10px 10px 0 }
+#plpost input[type="submit"] { display: block; background: #303030; color: #fff; border: 0; line-height: 30px; padding: 0 20px; border-radius: 5px; float: right; }
+textarea#saytext { width: 99%; }
+#plpost { margin: 0 20px }
